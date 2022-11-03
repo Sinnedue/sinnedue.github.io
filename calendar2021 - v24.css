@@ -1,0 +1,471 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-color: rgb(199, 213, 235);
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+  
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+  
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg-container {
+    background-image: url(../background/background.png);
+    background-size: contain;
+    height: 904px;
+    width: 1600px;
+    border: 5px solid black;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.grid-1 {
+    display: flex;
+}
+
+section div {
+    background: transparent;
+}
+
+/* door styles */
+.grid-1 input {
+    display: none;
+}
+
+.label-circle {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    cursor: pointer;
+
+    display: flex;
+    min-height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.door-circle {
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: all 700ms;
+    border: 2px dashed transparent;
+    border-radius: 50%;
+}
+
+.door-circle div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    backface-visibility: hidden;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.door-circle .back {
+    transform: rotateY(180deg);
+}
+
+label:hover .door-circle {
+    border-color: red;
+    transform: rotateY(180deg);
+}
+   
+:checked + .door-circle {
+    transform: rotateY(180deg);
+}
+
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+
+/* individual items */
+
+.day-1 {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-left: 317px;
+    margin-top: 53px;
+}
+
+.day-1 .back {
+    background: url(../doors/Door01.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.day-2 {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    margin-left: 427px;
+    margin-top: 92px;
+}
+
+.day-2 .back {
+    background: url(../doors/Door02.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.day-3 {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    margin-left: 547px;
+    margin-top: 46px;
+}
+
+.day-3 .back {
+    background: url(../doors/Door03.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.day-4 {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    margin-left: 661px;
+    margin-top: 111px;
+}
+
+.day-4 .back {
+    background: url(../doors/Door04.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.day-5 {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    margin-left: 874px;
+    margin-top: 138px;
+}
+
+.day-5 .back {
+    background: url(../doors/Door05.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.day-6 {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    margin-left: 1211px;
+    margin-top: 109px;
+}
+
+.day-6 .back {
+    background: url(../doors/Door06.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.day-7 {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    margin-left: 1356px;
+    margin-top: 104px;
+}
+
+.day-7 .back {
+    background: url(../doors/Door07.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.day-8 {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    margin-left: 1296px;
+    margin-top: 246px;
+}
+
+.day-8 .back {
+    background: url(../doors/Door08.jpg);
+    background-size: 150%;
+    background-position: center;
+}
+
+.day-9 {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    margin-left: 1309px;
+    margin-top: 484px;
+}
+
+.day-9 .back {
+    background: url(../doors/Door09.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.day-10 {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    margin-left: 1167px;
+    margin-top: 500px;
+}
+
+.day-10 .back {
+    background: url(../doors/Door10.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.day-11 {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    margin-left: 997px;
+    margin-top: 452px;
+}
+
+.day-11 .back {
+    background: url(../doors/Door11.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.day-12 {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    margin-left: 874px;
+    margin-top: 511px;
+}
+
+.day-12 .back {
+    background: url(../doors/Door12.jpg);
+    background-size: 160%;
+    background-position: center;
+}
+
+.day-13 {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    margin-left: 486px;
+    margin-top: 349px;
+}
+
+.day-13 .back {
+    background: url(../doors/Door13.jpg);
+    background-size: 180%;
+    background-position: left;
+}
+
+.day-14 {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    margin-left: 233px;
+    margin-top: 478px;
+}
+
+.day-14 .back {
+    background: url(../doors/Door14.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.day-15 {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    margin-left: 85px;
+    margin-top: 478px;
+}
+
+.day-15 .back {
+    background: url(../doors/Door15.jpg);
+    background-size: 200%;
+    background-position: center;
+}
+
+.day-16 {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-top: 600px;
+}
+
+.day-16 .back {
+    background: url(../doors/Door16.jpg);
+    background-size: cover;
+    background-position: center top;
+}
+
+.day-17 {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    margin-left: 312px;
+    margin-top: 638px;
+}
+
+.day-17 .back {
+    background: url(../doors/Door17.jpg);
+    background-size: cover;
+    background-position: center top;
+}
+
+.day-18 {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    margin-left: 394px;
+    margin-top: 761px;
+}
+
+.day-18 .back {
+    background: url(../doors/Door18.jpg);
+    background-size: cover;
+    background-position: center top;
+}
+
+.day-19 {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    margin-left: 705px;
+    margin-top: 757px;
+}
+
+.day-19 .back {
+    background: url(../doors/Door19.jpg);
+    background-size: cover;
+    background-position: center top;
+}
+
+.day-20 {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    margin-left: 781px;
+    margin-top: 643px;
+}
+
+.day-20 .back {
+    background: url(../doors/Door20.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.day-21 {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    margin-left: 881px;
+    margin-top: 752px;
+}
+
+.day-21 .back {
+    background: url(../doors/Door21.jpg);
+    background-size: cover;
+    background-position: right top;
+}
+ 
+.day-22 {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    margin-left: 960px;
+    margin-top: 647px;
+}
+
+.day-22 .back {
+    background: url(../doors/Door22.jpg);
+    background-size: cover;
+    background-position: right top;
+}
+
+.day-23 {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    margin-left: 1091px;
+    margin-top: 615px;
+}
+
+.day-23 .back {
+    background: url(../doors/Door23.jpg);
+    background-size: cover;
+    background-position: center top;
+}
+
+.day-24 {
+    position: absolute;
+    width: 176px;
+    height: 176px;
+    border-radius: 50%;
+    margin-left: 1170px;
+    margin-top: 703px;
+}
+
+.day-24 .back {
+    background: url(../doors/Door24.jpg);
+    background-size: cover;
+    background-position: center top;
+}
+
+/*
+    Hi there adventurer, wonder what brought you here? Looking for a hidden giveaway? Well you have your luck then! Here it is :D
+    https://www.steamgifts.com/giveaway/oCcYH/
+*/
