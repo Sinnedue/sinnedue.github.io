@@ -27,7 +27,7 @@ body {
 }
 
 .bg-container {
-    background-image: url(../background/background.png);
+    background-image: url(../background/MoltenDragon.png);
     background-size: contain;
     height: 904px;
     width: 1600px;
@@ -57,7 +57,7 @@ section div {
     display: flex;
     min-height: 100%;
     width: 100%;
-    border-radius: 50%;
+	/*border-radius: 50% unnecessary*/
 }
 
 .door-circle {
@@ -65,14 +65,14 @@ section div {
     transform-style: preserve-3d;
     transition: all 700ms;
     border: 2px dashed transparent;
-    border-radius: 50%;
+    /*border-radius:50% border of the outer edge*/
 }
 
 .door-circle div {
     position: absolute;
     height: 100%;
     width: 100%;
-    border-radius: 50%;
+  /*border-radius: 50% this rounds the image*/
     backface-visibility: hidden;
   
     display: flex;
@@ -81,12 +81,12 @@ section div {
 }
   
 .door-circle .back {
-    transform: rotateY(180deg);
+    transform: rotateY(180deg);/*important?*/
 }
 
 label:hover .door-circle {
     border-color: red;
-    transform: rotateY(180deg);
+    transform: rotateY(180deg); /*important?*/
 }
    
 :checked + .door-circle {
@@ -100,20 +100,20 @@ a.fill-div {
     text-decoration: none;
 }
 
-
 /* individual items */
 
 .day-1 {
     position: absolute;
-    width: 70px;
-    height: 70px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
-    margin-left: 317px;
-    margin-top: 53px;
+    margin-left: 80px;
+    margin-top: 200px;
+	
 }
 
 .day-1 .back {
-    background: url(../doors/Door01.jpg);
+    background: url(../doors/cdoor01.gif);
     background-size: cover;
     background-position: center;
 }
@@ -121,26 +121,26 @@ a.fill-div {
 
 .day-2 {
     position: absolute;
-    width: 115px;
-    height: 115px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
-    margin-left: 427px;
-    margin-top: 92px;
+    margin-left: 125px;
+    margin-top: 708px;
 }
 
 .day-2 .back {
-    background: url(../doors/Door02.png);
+    background: url(../doors/Door02.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .day-3 {
     position: absolute;
-    width: 115px;
-    height: 115px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
-    margin-left: 547px;
-    margin-top: 46px;
+    margin-left: 232px;
+    margin-top: 574px;
 }
 
 .day-3 .back {
@@ -152,11 +152,11 @@ a.fill-div {
 
 .day-4 {
     position: absolute;
-    width: 115px;
-    height: 115px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
-    margin-left: 661px;
-    margin-top: 111px;
+    margin-left: 588px;
+    margin-top: 474px;
 }
 
 .day-4 .back {
@@ -167,11 +167,11 @@ a.fill-div {
 
 .day-5 {
     position: absolute;
-    width: 115px;
-    height: 115px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
-    margin-left: 874px;
-    margin-top: 138px;
+    margin-left: 870px;
+    margin-top: 501px;
 }
 
 .day-5 .back {
@@ -182,11 +182,11 @@ a.fill-div {
 
 .day-6 {
     position: absolute;
-    width: 115px;
-    height: 115px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
-    margin-left: 1211px;
-    margin-top: 109px;
+    margin-left: 938px;
+    margin-top: 611px;
 }
 
 .day-6 .back {
@@ -197,11 +197,11 @@ a.fill-div {
 
 .day-7 {
     position: absolute;
-    width: 115px;
-    height: 115px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
-    margin-left: 1356px;
-    margin-top: 104px;
+    margin-left: 728px;
+    margin-top: 655px;
 }
 
 .day-7 .back {
@@ -212,11 +212,11 @@ a.fill-div {
 
 .day-8 {
     position: absolute;
-    width: 115px;
-    height: 115px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
-    margin-left: 1296px;
-    margin-top: 246px;
+    margin-left: 536px;
+    margin-top: 720px;
 }
 
 .day-8 .back {
@@ -227,11 +227,11 @@ a.fill-div {
 
 .day-9 {
     position: absolute;
-    width: 115px;
-    height: 115px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
-    margin-left: 1309px;
-    margin-top: 484px;
+    margin-left: 734px;
+    margin-top: 779px;
 }
 
 .day-9 .back {
@@ -242,11 +242,11 @@ a.fill-div {
 
 .day-10 {
     position: absolute;
-    width: 115px;
-    height: 115px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
-    margin-left: 1167px;
-    margin-top: 500px;
+    margin-left: 954px;
+    margin-top: 756px;
 }
 
 .day-10 .back {
@@ -257,11 +257,11 @@ a.fill-div {
 
 .day-11 {
     position: absolute;
-    width: 115px;
-    height: 115px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
-    margin-left: 997px;
-    margin-top: 452px;
+    margin-left: 1091px;
+    margin-top: 603px;
 }
 
 .day-11 .back {
@@ -272,11 +272,11 @@ a.fill-div {
 
 .day-12 {
     position: absolute;
-    width: 115px;
-    height: 115px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
-    margin-left: 874px;
-    margin-top: 511px;
+    margin-left: 1085px;
+    margin-top: 819px;
 }
 
 .day-12 .back {
@@ -287,11 +287,11 @@ a.fill-div {
 
 .day-13 {
     position: absolute;
-    width: 115px;
-    height: 115px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
-    margin-left: 486px;
-    margin-top: 349px;
+    margin-left: 1308px;
+    margin-top: 812px;
 }
 
 .day-13 .back {
@@ -302,11 +302,11 @@ a.fill-div {
 
 .day-14 {
     position: absolute;
-    width: 115px;
-    height: 115px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
-    margin-left: 233px;
-    margin-top: 478px;
+    margin-left: 1343px;
+    margin-top: 634px;
 }
 
 .day-14 .back {
@@ -317,11 +317,11 @@ a.fill-div {
 
 .day-15 {
     position: absolute;
-    width: 115px;
-    height: 115px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
-    margin-left: 85px;
-    margin-top: 478px;
+    margin-left: 1483px;
+    margin-top: 671px;
 }
 
 .day-15 .back {
@@ -332,11 +332,11 @@ a.fill-div {
 
 .day-16 {
     position: absolute;
-    width: 115px;
-    height: 115px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
-    margin-left: 30px;
-    margin-top: 600px;
+    margin-left: 1463px;
+    margin-top: 548px;
 }
 
 .day-16 .back {
@@ -347,11 +347,11 @@ a.fill-div {
 
 .day-17 {
     position: absolute;
-    width: 115px;
-    height: 115px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
-    margin-left: 312px;
-    margin-top: 638px;
+    margin-left: 1321px;
+    margin-top: 402px;
 }
 
 .day-17 .back {
@@ -362,11 +362,11 @@ a.fill-div {
 
 .day-18 {
     position: absolute;
-    width: 115px;
-    height: 115px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
-    margin-left: 394px;
-    margin-top: 761px;
+    margin-left: 1483px;
+    margin-top: 315px;
 }
 
 .day-18 .back {
@@ -377,11 +377,11 @@ a.fill-div {
 
 .day-19 {
     position: absolute;
-    width: 115px;
-    height: 115px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
-    margin-left: 705px;
-    margin-top: 757px;
+    margin-left: 1428px;
+    margin-top: 176px;
 }
 
 .day-19 .back {
@@ -392,11 +392,11 @@ a.fill-div {
 
 .day-20 {
     position: absolute;
-    width: 115px;
-    height: 115px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
-    margin-left: 781px;
-    margin-top: 643px;
+    margin-left: 1330px;
+    margin-top: 33px;
 }
 
 .day-20 .back {
@@ -407,11 +407,11 @@ a.fill-div {
 
 .day-21 {
     position: absolute;
-    width: 115px;
-    height: 115px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
-    margin-left: 881px;
-    margin-top: 752px;
+    margin-left: 1072px;
+    margin-top: 146px;
 }
 
 .day-21 .back {
@@ -422,11 +422,11 @@ a.fill-div {
  
 .day-22 {
     position: absolute;
-    width: 115px;
-    height: 115px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
-    margin-left: 960px;
-    margin-top: 647px;
+    margin-left: 1024px;
+    margin-top: 363px;
 }
 
 .day-22 .back {
@@ -437,11 +437,11 @@ a.fill-div {
 
 .day-23 {
     position: absolute;
-    width: 115px;
-    height: 115px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
-    margin-left: 1091px;
-    margin-top: 615px;
+    margin-left: 917px;
+    margin-top: 319px;
 }
 
 .day-23 .back {
@@ -452,11 +452,11 @@ a.fill-div {
 
 .day-24 {
     position: absolute;
-    width: 176px;
-    height: 176px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-    margin-left: 1170px;
-    margin-top: 703px;
+    margin-left: 618px;
+    margin-top: 222px;
 }
 
 .day-24 .back {
@@ -465,3 +465,17 @@ a.fill-div {
     background-position: center top;
 }
 
+.void-door {
+    position: absolute;
+    width: 72px;
+    height: 500px;
+    border-radius: 50%;
+    margin-left: 530px;
+    margin-top: 06px;
+}
+
+.void-door .back {
+    background: url(../doors/Door03.jpg);
+    background-size: cover;
+    background-position: center;
+}
